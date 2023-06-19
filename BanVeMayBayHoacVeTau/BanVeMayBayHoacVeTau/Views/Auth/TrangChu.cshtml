@@ -1,0 +1,719 @@
+﻿
+@{
+    ViewBag.Title = "Home Page";
+
+
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+
+}
+
+
+<!--<!-- Slideshow 4 -->
+<!--<div class="slider">
+    <div class="callbacks_container">
+        <ul class="rslides" id="slider4">
+            <li>
+                <div class="slider-img w3-oneimg">
+                    <div class="container">
+                        <div class="slider-info">
+                            <h6>Mua Vé</h6>
+                            <h4>Vi Vu  <br>Mùa Hè</h4>
+                            <p>
+                                Tận hưởng những phút giây tuyệt vời cùng chúng tôi!
+                            </p>
+                        </div>-->
+                        <!-- Booking-->
+                        <!--<div class="booking-form-w3layouts">-->
+                            <!-- Form starts here -->
+                            <!--<form action="#" method="post">
+                                <h2 class="sub-heading-agileits" style="color:white;">Đặt vé máy bay</h2>
+                                <div class="main-flex-w3ls-sectns">
+                                    <div class="field-agileinfo-spc form-w3-agile-text1">
+                                        <select id="thanh_pho_start" class="form-control">
+                                            <option value="" disabled="" style="color: red;">-----Việt Nam-----</option>
+                                            <option selected="selected" value="--"></option>
+                                            <option value="TP">TP. Hồ Chí Minh</option>
+                                            <option value="Hà">Hà Nội</option>
+                                            <option value="Đà">Đà Lạt</option>
+
+                                            <option value="Cần">Cần Thơ</option>
+                                            <option value="" disabled="" style="color: red;">-----Quốc tế-----</option>
+                                            <option value="Phnom">Phnom Penh </option>
+                                            <option value="Bangkok">Bangkok</option>
+                                            <option value="Bắc">Bắc Kinh</option>
+                                            <option value="New">New York</option>-->
+                                            @*  Cai selected nay gan o dau thi dong do mac dinh hien len truoc khi chay*@
+                                        <!--</select>
+                                    </div>
+                                    <div class="field-agileinfo-spc form-w3-agile-text2">
+                                        <select id="thanh_pho_end" class="form-control">
+                                            <option value="" disabled="" style="color: red;">-----Việt Nam-----</option>
+                                            <option selected="selected" value="--"></option>
+                                            <option value="TP">TP. Hồ Chí Minh</option>
+                                            <option value="Hà">Hà Nội</option>
+                                            <option value="Đà">Đà Lạt</option>
+                                            <option value="Cần">Cần Thơ</option>
+                                            <option value="" disabled="" style="color: red;">-----Quốc tế-----</option>
+                                            <option value="Phnom">Phnom Penh </option>
+                                            <option value="Bangkok">Bangkok</option>
+                                            <option value="Bắc">Bắc Kinh</option>
+                                            <option value="New">New York</option>-->
+                                            @*  Cai selected nay gan o dau thi dong do mac dinh hien len truoc khi chay*@
+                                        <!--</select>
+                                    </div>
+
+
+
+
+
+
+
+
+
+                                </div>
+
+                                <h2 class="sub-heading-agileits" style="color:white;">Ngày Đi</h2>
+                                <div class="field-agileinfo-spc form-w3-agile-text2">
+                                    <lable style="color: bisque;"> Ngày:</lable>
+                                    <select id="flight_day">
+
+
+
+                                        <option selected="selected" value=""></option>
+                                        <option value="01">01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                        <option value="04">04</option>
+                                        <option value="05">05</option>
+                                        <option value="06">06</option>
+                                        <option value="07">07</option>
+                                        <option value="08">08</option>
+                                        <option value="09">09</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+
+                                    </select>
+                                    <lable style="color: bisque;"> Tháng:</lable>
+                                    <select id="flight_month">
+
+
+                                        <option selected="selected" value=""></option>
+                                        <option value="01">01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                        <option value="04">04</option>
+                                        <option value="05">05</option>
+                                        <option value="06">06</option>
+                                        <option value="07">07</option>
+                                        <option value="08">08</option>
+                                        <option value="09">09</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+
+                                    </select>
+                                    <lable style="color: bisque;"> Năm:</lable>
+                                    <select id="flight_year">
+
+
+                                        <option selected="selected" value=""></option>
+                                        <option value="01">2021</option>
+                                        <option value="02">2022</option>
+                                        <option value="03">2023</option>
+                                        <option value="04">2024</option>
+                                        <option value="05">2025</option>
+                                        <option value="06">2026</option>
+                                        <option value="07">2027</option>
+                                        <option value="08">2028</option>
+                                        <option value="09">2029</option>
+                                        <option value="10">2030</option>
+
+
+                                    </select>
+
+
+
+
+                                </div>
+
+
+
+
+                                <h2 class="sub-heading-agileits" style="color:white;">Ngày Về</h2>
+                                <div class="field-agileinfo-spc form-w3-agile-text2">
+                                    <lable style="color: bisque;"> Ngày:</lable>
+                                    <select id="return_date">
+
+
+
+                                        <option selected="selected" value=""></option>
+                                        <option value="01">01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                        <option value="04">04</option>
+                                        <option value="05">05</option>
+                                        <option value="06">06</option>
+                                        <option value="07">07</option>
+                                        <option value="08">08</option>
+                                        <option value="09">09</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+
+                                    </select>
+                                    <lable style="color: bisque;"> Tháng:</lable>
+                                    <select id="return_month">
+
+
+                                        <option selected="selected" value=""></option>
+                                        <option value="01">01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                        <option value="04">04</option>
+                                        <option value="05">05</option>
+                                        <option value="06">06</option>
+                                        <option value="07">07</option>
+                                        <option value="08">08</option>
+                                        <option value="09">09</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+
+                                    </select>
+                                    <lable style="color: bisque;"> Năm:</lable>
+                                    <select id="return_year">
+
+                                        <option selected="selected" value=""></option>
+                                        <option value="01">2021</option>
+                                        <option value="02">2022</option>
+                                        <option value="03">2023</option>
+                                        <option value="04">2024</option>
+                                        <option value="05">2025</option>
+                                        <option value="06">2026</option>
+                                        <option value="07">2027</option>
+                                        <option value="08">2028</option>
+                                        <option value="09">2029</option>
+                                        <option value="10">2030</option>
+
+
+                                    </select>
+
+
+
+                                </div>
+
+
+
+
+                                <br />-->
+                                @*// Phan chon radio buttion the loai ve*@
+                                <!--<div class="radio-section">
+
+                                    <lable style="color: bisque;"> Chọn loại vé:</lable>
+                                    <select id="category_Flight">
+
+                                        <option selected="selected" value="--"></option>
+                                        <option value="Một">Một chiều</option>
+                                        <option value="Khứ">Khứ hồi</option>
+
+                                    </select>-->
+
+
+
+                                    @*// Phan chon ngay di ngay ve*@
+
+
+
+                                @*</div>
+
+
+                                <div class="clear">    <a href="javascript:Search()"> Tìm Kiếm </a> </div>
+
+
+
+
+
+                                <div class="clear"></div>-->*@
+
+                                <!--end bookiing-->
+                            <!--</form>-->
+                            <!--// Form starts here -->
+                        <!--</div>
+
+
+
+
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="slider-img w3-twoimg">
+                    <div class="container">
+                        <div class="slider-info">
+                            <h6>Worldwide</h6>
+                            <h4>Biggest <br> Network</h4>
+                            <p>
+                                Quis autem vel eum iure reprehderit.Etiam sed odio consequat
+                                tristique elit sed, molestie nulla.
+                                velit sagittis vehicula. Duis posuere
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="slider-img w3-threeimg">
+                    <div class="container">
+                        <div class="slider-info">
+                            <h6>Supplying</h6>
+                            <h4>Secured<br> Transport</h4>
+                            <p>
+                                Quis autem vel eum iure reprehderit.Etiam sed odio consequat
+                                tristique elit sed, molestie nulla.
+                                velit sagittis vehicula. Duis posuere
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="clearfix"> </div>-->
+
+    <!-- This is here just to demonstrate the callbacks -->
+    <!-- <ul class="events">
+       <li>Example 4 callback events</li>
+       </ul>-->
+<!--</div>-->
+<!--//banner-->
+<div class="about" id="about">
+    <div class="container">
+        <div class="about-banner-grids ">
+            <div class="col-md-4 left-of-about">
+                <h3 style="color:gold;">Mua vé máy bay bằng các hình thức</h3>
+                <div class=" about-matter-left">
+                    <ul style="line-height:180%">
+                        <li>1. Mua trực tuyến trên Website </li>
+                        <li>2. Qua chat </li>
+                        <ul>
+                            <li><img src="~/Content/images/icons8-facebook-96.png" /><img src="~/Content/images/icons8-zalo-100.png" /></li>
+                        </ul>
+                        <li>3. Liên hệ: <p style=" color:red;">0344142375</p></li>
+                        <li>
+                            4. Mua tại:
+                            <a href="https://www.ou.edu.vn"><p style="color:orangered;">Đại học Mở</p></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div>
+                <img src="~/Content/images/ve-may-bay-gia-re-moi-nhat.jpg" />
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+        <div class="col-md-6 about-right-info" style="background-image:url(/Content/images/g9.jpg) " >
+            <p></p>
+        </div>
+        <div class=" col-md-6 about-info-air">
+            <div class="air-list">
+                <h4>Các ngân hàng liên kết</h4>
+                <p>
+                    <img src="~/Content/images/anh-dai-dien-ngan-hang.png" />
+                </p>
+            </div>
+            <div class="air-list">
+                <h4>Mẹo săn vé máy bay giá rẻ</h4>
+                <p>
+                    Bạn truy cập thường xuyên hệ thống đặt vé máy bay trực tuyến, Vietjet (.net).
+                    Hãy theo dõi fanpage chúng tôi : Vietjet khuyến mãi.
+                    Thông tin liên tục được làm mới từ đội ngũ booker trên trang này.
+                    Hotline hỗ trợ trực tuyến 24/7 : zalo, messenger, telegram .. . .
+                    Cần là có, tìm là thấy giá vé tốt nhất.
+                </p>
+            </div>
+            <div class="air-list">
+                <h4>Hãng hàng không nào sẽ là hợp lý</h4>
+                <p>
+                    Việt Nam hiện có 04 hãng hàng không nội địa là Vietjet, Jetstar, Vietnam Airlines và Bamboo Airways. Theo thống kê thì Vietjet Air đang là hãng có giá vé máy bay tốt nhất. Jetstar chiếm vị trí thứ hai và BamBoo kế tiếp. Vietnam Airlines thì có chất lượng dịch vụ tốt nhất trong tất cả. Như vậy thì trừ hãng cuối ra, còn lại như nhau nhé. Hãng nào thì cũng vậy : phải nghiêm túc chuẩn bị. Bạn phải có kế hoạch và khảo sát kỹ càng.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--// About-->
+@*<div class="grid_3 grid_5 wow fadeInLeft animated" data-wow-delay=".5s">*@
+    @*<h3 class="bars"> Vé được nhiều nhất</h3>
+    <div class="tab-content">
+        <div class="tab-pane active" id="domprogress">
+            <div class="progress">
+                <div class="progress-bar progress-bar-primary" style="width: 80%"></div>
+            </div>
+            <p>Vé bay <code>Đà Lạt</code> </p>
+            <div class="progress">
+                <div class="progress-bar progress-bar-info" style="width: 70%"></div>
+            </div>
+            <p>Vé bay<code>Đà Nẵng</code></p>
+            <div class="progress">
+                <div class="progress-bar progress-bar-success" style="width: 60%"></div>
+            </div>
+            <p><code>Nha Trang</code></p>
+            <div class="progress">
+                <div class="progress-bar progress-bar-warning" style="width: 70%"></div>
+            </div>
+            <p>Vé bay <code>Quy Nhơn</code></p>
+            <div class="progress">
+                <div class="progress-bar progress-bar-danger" style="width: 50%"></div>
+            </div>
+            <p>Vé bay<code>Phú Quốc</code></p>
+            <div class="progress">
+                <div class="progress-bar progress-bar-inverse" style="width: 40%"></div>
+            </div>
+        </div>
+    </div>
+</div>*@
+<!-- services-->
+<div class="services" id="services">
+    <h3 class="title clr">Đánh giá</h3>
+    <div class="banner-bottom-girds">
+        <div class="col-md-4 col-sm-6 col-xs-6 its-banner-grid gird-ser-clr2">
+            <div class="white-shadow">
+                <div class="white-left">
+                    <span class="fa fa-truck banner-icon" aria-hidden="true"></span>
+                </div>
+                <div class="white-right">
+                    <h4> Đưa đón dân bay</h4>
+                    <p>Khi mua vé tại Website bạn sẽ nhận được dịch vụ đưa đón tại sân bay miễn phí.</p>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-6 its-banner-grid gird-ser-clr">
+            <div class="white-shadow">
+                <div class="white-left">
+                    <span class="fa fa-clock-o banner-icon" aria-hidden="true"></span>
+                </div>
+                <div class="white-right">
+                    <h4>Thời gian nhanh chống</h4>
+                    <p>Đặt vé nhanh chống, tiện lợi, hỗ trợ tận tình.</p>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-6 its-banner-grid gird-ser-clr2">
+            <div class="white-shadow">
+                <div class=" white-left">
+                    <span class="fa fa-lock banner-icon" aria-hidden="true"></span>
+                </div>
+                <div class=" white-right">
+                    <h4>Chính sách bảo mật </h4>
+                    <p>Cam kết mọi thông tin mà bạn cung cấp sẽ không bị tiết lộ.</p>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-6 its-banner-grid colo">
+            <div class="white-shadow">
+                <div class=" white-left">
+                    <span class="fa fa-archive banner-icon" aria-hidden="true"></span>
+                </div>
+                <div class="white-right">
+                    <h4>Đóng gói hành lý</h4>
+                    <p>Bạn sẽ được khuyến mãi kí gửi 3kg.</p>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-6 its-banner-grid gird-ser-clr2">
+            <div class="white-shadow">
+                <div class="white-right">
+                    <div class="white-left">
+                        <span class="fa fa-fighter-jet banner-icon" aria-hidden="true"></span>
+                    </div>
+                    <h4>Vé bay toàn cầu</h4>
+                    <p>Thuận tiện với nhiều hãng bay trên khắp thế giới.</p>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-6 its-banner-grid colo">
+            <div class="white-shadow">
+                <div class="white-right">
+                    <div class=" white-left">
+                        <span class="fa fa-home banner-icon" aria-hidden="true"></span>
+                    </div>
+                    <h4>Dịch vụ ở</h4>
+                    <p>Cung cấp những khách sạn gần nhất .</p>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+</div>
+<!--// services-->
+<!--price table-->
+<div class="price-table" id="price">
+    <div class="container">
+        <h3 class="title">Vé bán chạy nhất</h3>
+        <div class="agileits-banner-grids text-center">
+            <div class=" col-md-4 col-sm-4 priceing-tag">
+                <div class=" clr1 agileits-banner-grid" style="background-image:url(/Content/images/DNA.jpg)">
+                    <h4>TP HCM</h4>
+                    <div class="table_cost">
+                        <span class="cost"> 15.000</span>
+                    </div>
+                    <div class="list-price">
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <a class="w3_play_icon1" href="#" data-toggle="modal" data-target="#myModal"> Mua ngay</a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 priceing-tag">
+                <div class="clr2 agileits-banner-grid" style="background-image:url(/Content/images/DL.png)">
+                    <h4>Hà Nội</h4>
+                    <div class="table_cost">
+                        <span class="cost"> 10.000</span>
+                    </div>
+                    <div class="list-price">
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <a class="w3_play_icon1" href="#" data-toggle="modal" data-target="#myModal"> Mua ngay</a>
+                </div>
+            </div>
+            <div class=" col-md-4 col-sm-4 priceing-tag">
+                <div class="clr3 agileits-banner-grid" style="background-image:url(/Content/images/PQ.jpg)">
+                    <h4>Đẵ Nẵng </h4>
+                    <div class="table_cost">
+                        <span class="cost clr-price " style="color:white"> 10.000</span>
+                    </div>
+                    <div class="list-price">
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <a class="w3_play_icon1" href="#" data-toggle="modal" data-target="#myModal"> Mua ngay</a>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--//price table-->
+<!--testimonials-->
+<div class="testimonials colo" id="testimonials" style="background-image:url(/Content/images/g3.jpg)">
+    <div class="container">
+        <h3 class="title clr"></h3>
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="thumbnail adjust1">
+                        <div class="col-md-5 col-sm-5 right-says">
+                            <img class="img-responsive" src="images/t1.jpg" alt="">
+                        </div>
+                        <div class="col-md-7 col-sm-7 client-img">
+                            <div class="caption">
+                                <p>
+                                    <span class="fa fa-quote-left client-quote" aria-hidden="true"></span>Hãng hàng không quốc gia Việt Nam được thành lập vào tháng 1 năm 1956. Nó đánh dấu sự ra đời của ngành hàng không dân dụng Việt Nam. Tính đến thời điểm hiện nay, Vietnam Airlines đã có mạng lưới bay rộng khắp thế giới. Hãng có nhiều hành trình đa dạng đến 490 sân bay và trên 260 quốc gia và vùng lãnh thổ.<span class="fa fa-quote-right client-quote" aria-hidden="true"></span>
+                                </p>
+                            </div>
+                            <blockquote class="adjust2">
+                                <h6>Hãng hàng không Vietnam Airlines</h6>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="thumbnail adjust1">
+                        <div class="col-md-5 col-sm-5 right-says">
+                            <img class="img-responsive" src="images/t2.jpg" alt="">
+                        </div>
+                        <div class="col-md-7 col-sm-7 client-img">
+                            <div class="caption">
+                                <p>
+                                    <span class="fa fa-quote-left client-quote" aria-hidden="true"></span>Hãng hàng không giá rẻ đứng đầu tại Việt Nam. Chương trình khuyến mãi đa dạng và phong phú. Hiện nay, Vietjet đã vươn lên đứng đầu tại thị trường trong nước. Hãng liên tục cải tiến và nâng cao chất lượng dịch vụ. Mạng lưới bay đã nâng cấp phủ rộng khắp cả nước.<span class="fa fa-quote-right client-quote" aria-hidden="true"></span>
+                                </p>
+                            </div>
+                            <blockquote class="adjust2">
+                                <h6>Hãng hàng không Vietjet Air</h6>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="thumbnail adjust1">
+                        <div class="col-md-5 col-sm-5 right-says">
+                            <img class=" img-responsive" src="images/t3.jpg" alt="">
+                        </div>
+                        <div class="col-md-7 col-sm-7 client-img">
+                            <div class="caption">
+                                <p>
+                                    <span class="fa fa-quote-left client-quote" aria-hidden="true"></span>Hãng sinh sau đẻ muộn nhưng nhiều ham muốn. Hãng đã tạo nên sự cạnh tranh không lớn lắm giữa các đơn vị khai thác. Người được lợi chính là hành khách trong nước. Bamboo Airways cung cấp 04 hạng vé : Eco, Plus, Business và First. Mức giá mỗi hạng vé thấp hơn Vietnam Airlines và cao hơn Vietjet một chút. Hành khách sẽ được tận hưởng chất lượng dịch vụ bay tốt nhất với giá rẻ. <span class="fa fa-quote-right client-quote" aria-hidden="true"></span>
+                                </p>
+                            </div>
+                            <blockquote class="adjust2">
+                                <h6>Hãng hàng không Bamboo Airways </h6>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Controls -->
+            <!--<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+               <span class="fa fa-chevron-left"></span> </a>
+               <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+               <span class="fa fa-chevron-right"></span> </a>
+               </div> </div> -->
+            <!--// testimonials-->
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="container">
+        <div class="col-md-6 col-sm-7 header-side">
+            <div class="header-side">
+                <div class="buttom-social-grids">
+                    <ul>
+                        <li><a href="https://www.facebook.com/VietnamAirlines/?locale=vi_VN"><span class="fa fa-facebook"></span></a></li>
+                        <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                        <li><a href="#"><span class="fa fa-rss"></span></a></li>
+                        <li><a href="#"><span class="fa fa-vk"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <p>Mua vé may bay nhanh</p>
+        </div>
+        <div class="col-md-6 col-sm-5 header-right">
+            <h2><a href="index.html"></a></h2>
+        </div>
+    </div>
+</footer>
+
+
+
+<script>
+
+    function Search() {
+
+
+        // Đọc dữ liệu của ngày bay
+
+        var dauXet = "-";
+        var cach = " ";
+        var thang = $('#flight_month').find(":selected").text();
+
+        var ngay = $('#flight_day').find(":selected").text();
+
+        var nam = $('#flight_year').find(":selected").text();
+
+        var gio = $('#flight_hour').find(":selected").text();
+
+
+        var buoi = $('#flight_session').find(":selected").text();
+
+
+        var flightdate = ngay + dauXet + thang + dauXet + nam;
+
+        // Đọc dữ liệu của ngày về
+
+        var return_thang = $('#return_month').find(":selected").text();
+
+        var return_ngay = $('#return_date').find(":selected").text();
+
+        var return_nam = $('#return_year').find(":selected").text();
+
+        var return_gio = $('#return_hour').find(":selected").text();
+
+
+        var return_buoi = $('#return_session').find(":selected").text();
+
+
+        var returnflightdate = return_ngay + dauXet + return_thang + dauXet + return_nam
+
+
+        // Doc du lieu truong Điểm Bắt Đầu
+
+        var startingPoint = $('#thanh_pho_start').find(":selected").val();
+
+        // Đọc dữ liệu trường Điểm Kết Thúc
+
+        var finalDes = $('#thanh_pho_end').find(":selected").val();
+
+
+
+        // Doc du lieu the loai chuyen bay
+        var categoryFlight = $('#category_Flight').find(":selected").val();
+
+
+
+
+
+
+        location.href = '/Danh-sach-Ve/' + startingPoint + '/' + finalDes + '/' + flightdate + '/' + returnflightdate + '/' + categoryFlight + '/';
+    }
+
+
+
+
+</script>

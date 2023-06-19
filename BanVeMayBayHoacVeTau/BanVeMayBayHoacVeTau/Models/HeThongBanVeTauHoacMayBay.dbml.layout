@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 11.25" name="HeThongBanVeTauHoacMayBay">
+  <DataContextMoniker Name="/HeThongBanVeTauHoacMayBayDataContext" />
+  <nestedChildShapes>
+    <classShape Id="282b2963-2f7d-4e08-835e-7facc61b8053" absoluteBounds="0.75, 9.125, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/HeThongBanVeTauHoacMayBayDataContext/Supplier" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a15edb14-c857-41aa-9544-3f05ef191b97" absoluteBounds="0.765, 9.585, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d13f3335-b4c3-4496-9a3d-8e16382c0a06" absoluteBounds="3.5, 8.875, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/HeThongBanVeTauHoacMayBayDataContext/Product" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a4ea48bf-5189-49ce-b67a-00a9db5bc588" absoluteBounds="3.515, 9.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="17478ac6-95dd-4c41-b5a2-ad52d498e96d" absoluteBounds="3.5, 1, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/HeThongBanVeTauHoacMayBayDataContext/Order" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f732a074-5dd4-4d1c-8f9f-27b9031fd3d1" absoluteBounds="3.515, 1.46, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8e249629-01bc-4f4a-95f6-3510a9738aad" absoluteBounds="6.25, 1, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/HeThongBanVeTauHoacMayBayDataContext/Order_Detail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="59b4e83f-4a53-4e8b-906c-791b79c05c4f" absoluteBounds="6.265, 1.46, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e34d4e67-f100-4ba1-8578-dc90d0df7cc6" absoluteBounds="0.75, 5, 2, 2.3478011067708344">
+      <DataClassMoniker Name="/HeThongBanVeTauHoacMayBayDataContext/Employee" />
+      <nestedChildShapes>
+        <elementListCompartment Id="15195945-f8eb-4221-972e-4e57588657a2" absoluteBounds="0.765, 5.46, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="938fe252-6e3d-4de7-89b6-1e8f6218cbdc" absoluteBounds="0.75, 0.875, 2, 1.9631982421875">
+      <DataClassMoniker Name="/HeThongBanVeTauHoacMayBayDataContext/Customer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="251bcfbc-e95b-4356-814f-060e10565ca1" absoluteBounds="0.765, 1.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 9.91429768880208); (3.5 : 9.91429768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/HeThongBanVeTauHoacMayBayDataContext/Supplier/Supplier_Product" />
+      <nodes>
+        <classShapeMoniker Id="282b2963-2f7d-4e08-835e-7facc61b8053" />
+        <classShapeMoniker Id="d13f3335-b4c3-4496-9a3d-8e16382c0a06" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 1.88544840494792); (6.25 : 1.88544840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/HeThongBanVeTauHoacMayBayDataContext/Order/Order_Order_Detail" />
+      <nodes>
+        <classShapeMoniker Id="17478ac6-95dd-4c41-b5a2-ad52d498e96d" />
+        <classShapeMoniker Id="8e249629-01bc-4f4a-95f6-3510a9738aad" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 9.95274983723958); (7.25 : 9.95274983723958); (7.25 : 2.77089680989583)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/HeThongBanVeTauHoacMayBayDataContext/Product/Product_Order_Detail" />
+      <nodes>
+        <classShapeMoniker Id="d13f3335-b4c3-4496-9a3d-8e16382c0a06" />
+        <classShapeMoniker Id="8e249629-01bc-4f4a-95f6-3510a9738aad" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 6.17390055338542); (4.5 : 6.17390055338542); (4.5 : 2.77089680989583)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/HeThongBanVeTauHoacMayBayDataContext/Employee/Employee_Order" />
+      <nodes>
+        <classShapeMoniker Id="e34d4e67-f100-4ba1-8578-dc90d0df7cc6" />
+        <classShapeMoniker Id="17478ac6-95dd-4c41-b5a2-ad52d498e96d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 1.88544840494792); (3.5 : 1.88544840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/HeThongBanVeTauHoacMayBayDataContext/Customer/Customer_Order" />
+      <nodes>
+        <classShapeMoniker Id="938fe252-6e3d-4de7-89b6-1e8f6218cbdc" />
+        <classShapeMoniker Id="17478ac6-95dd-4c41-b5a2-ad52d498e96d" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

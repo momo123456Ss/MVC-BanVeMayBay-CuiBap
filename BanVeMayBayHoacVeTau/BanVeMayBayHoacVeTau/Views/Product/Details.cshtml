@@ -1,0 +1,74 @@
+﻿@model BanVeMayBayHoacVeTau.Models.Product
+
+@{
+    ViewBag.Title = "Details";
+            Layout = "~/Views/Shared/_Layout2.cshtml";
+
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Product</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.SupplierID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SupplierID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProductName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProductName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Notes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Notes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NormalPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NormalPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VIPPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VIPPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Discount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Discount)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ProductID }) |
+    @Html.ActionLink("Back to List", "Index")
+    |
+    @Html.ActionLink("Thêm giỏ hàng", "AddTicket", "Ticket", new { id = Model.ProductID }, null)
+</p>
+@*<div class="form-group text-right">
+    @Session["Name"]
+    <a href="@Url.Action("Logout","Auth")"> Đăng xuất</a>
+</div>*@

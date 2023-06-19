@@ -1,0 +1,16 @@
+﻿@model TESTDoiMatKhau.Models.User
+@{
+    ViewBag.Title = "ChangePass";
+}
+
+<h2>ChangePass</h2>
+@using (Html.BeginForm("ChangePass", "User", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, null))
+{
+    <label>Tên đăng nhập</label>
+    <input name="username" type="text" class="form-control" />
+    <label>Mật khẩu đổi</label>
+    <input name="passwordchange" type="password" class="form-control" />
+    <button type="submit" class="btn btn-success">Đổi mật khẩu</button>
+    @Html.Raw(ViewBag.Info)
+}
+

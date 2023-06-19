@@ -1,0 +1,51 @@
+﻿@model IEnumerable<BanVeMayBayHoacVeTau.Models.Supplier>
+
+@{
+    ViewBag.Title = "ListSuppliers";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+
+}
+
+<h2>ListSuppliers</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.SupplierName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Phone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fax)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.SupplierName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Phone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fax)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.SupplierID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.SupplierID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.SupplierID })
+        </td>
+    </tr>
+}
+
+</table>
+@*<div class="form-group text-right">
+    @Session["Name"]
+    <a href="@Url.Action("Logout","Auth")"> Đăng xuất</a>
+</div>*@

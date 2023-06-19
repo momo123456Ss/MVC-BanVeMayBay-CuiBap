@@ -1,0 +1,28 @@
+﻿@using System.Configuration;
+@{
+    string _googlesitekey = ConfigurationManager.AppSettings["GoogleSitekey"];
+}
+@using (Html.BeginForm("Login", "Auth", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, null))
+{
+    <div class="khung" style="margin: auto; max-width: 320px; min-height: 200px; border: 1px solid #0094ff; padding: 3px; margin-top: 5px;">
+        <h3 class="text-center text-danger">Đăng nhập</h3>
+        <div class="form-group">
+            <label>Tên đăng nhập</label>
+            <input name="username" type="text" class="form-control" placeholder="Tên đăng nhập" required />
+        </div>
+        <div class="form-group">
+            <label>Mật khẩu</label>
+            <input name="password" type="password" class="form-control" placeholder="Mật khẩu" required />
+        </div>
+        <div class="g-recaptcha" style="margin:auto;" data-sitekey=@_googlesitekey></div>
+
+        <div class="form-group text-right">
+            <a href="@Url.Action("CreateWithCustomer", "Register")" class="btn btn-warning">Đăng ký</a>
+
+            <button type="submit" class="btn btn-success" onclick="myVisible()">Đăng nhập</button>
+        </div>
+        <div class="form-group">
+            @Html.Raw(ViewBag.Error)
+        </div>
+    </div>
+}

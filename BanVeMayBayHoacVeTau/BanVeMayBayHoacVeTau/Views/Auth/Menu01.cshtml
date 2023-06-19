@@ -1,0 +1,53 @@
+﻿@{ 
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+
+}
+
+@*<!DOCTYPE html>
+
+<html>*@
+@*<head>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width" />
+    <title>MenuAdmin</title>*@
+    <style>
+        .khung {
+            margin: auto;
+            max-width: 300px;
+            min-height: 300px;
+            border: 1px solid #0094ff;
+            padding: 3px;
+            margin-top: 5px;
+        }
+    </style>
+@*</head>
+<body>*@
+    @using (Html.BeginForm("MenuAdmin", "Auth", FormMethod.Post))
+    {
+        <div class="khung">
+            <h3 class="text-center text-danger">Menu</h3>
+            <hr>
+            <div class="form-group">
+                @Html.ActionLink("ListProducts", "ListProducts", "Product") - 
+                @Html.ActionLink("Create Product", "Create", "Product")
+            </div>
+            <div class="form-group">
+                @Html.ActionLink("ListCustomers", "ListCustomers", "Customer") - 
+                @Html.ActionLink("Create Customer", "Create", "Customer")
+            </div>
+            <div class="form-group">
+                @Html.ActionLink("ListSuppliers", "ListSuppliers", "Supplier") - 
+                @Html.ActionLink("Create Supplier", "Create", "Supplier")
+            </div>
+            <div class="form-group">
+                @Html.ActionLink("ListEmployees", "ListEmployees", "Employee") - 
+                @Html.ActionLink("Create Employee", "Create", "Employee")
+            </div>
+            @*<div class="form-group text-right">
+                @Session["Name"]
+                <a href="@Url.Action("Logout","Auth")"> Đăng xuất</a>
+            </div>*@
+        </div>
+    }
+@*</body>
+</html>*@
